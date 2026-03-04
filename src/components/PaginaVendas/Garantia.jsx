@@ -27,7 +27,7 @@ const Garantia = () => {
 
           <div className="garantia-cta">
             <a href="#oferta" className="btn-outline-green">
-              Garanta agora seu protocolo
+              QUERO COMEÇAR SEM RISCO
             </a>
           </div>
         </div>

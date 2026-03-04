@@ -12,14 +12,14 @@ const Rodape = () => {
         <div className="rodape-contato">
           <div className="contato-item">
             <FiMail className="icon-verde" />
-            <span>contato@protocolo21dias.com</span>
+            <span>contatoprotocolo21dias@gmail.com</span>
           </div>
           <div className="redes-sociais">
             <a href="https://instagram.com/protocolo21dias" target="_blank" rel="noreferrer">
-              <FiInstagram /> @protocolo21dias
+              <FiInstagram /> @protocolo21d._
             </a>
             <a href="https://tiktok.com/@protocolo21dias" target="_blank" rel="noreferrer">
-              <FaTiktok /> @protocolo21dias
+              <FaTiktok /> @protocolo21dias6
             </a>
           </div>
         </div>

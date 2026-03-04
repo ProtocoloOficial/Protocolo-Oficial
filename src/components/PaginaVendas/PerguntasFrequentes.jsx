@@ -14,6 +14,10 @@ const FAQ = () => {
 
   const perguntas = [
     {
+      q: "Como eu recebo o acesso ao Protocolo 21D?",
+      a: "Assim que o pagamento for confirmado, você receberá automaticamente um e-mail com o link de acesso imediato ao Protocolo 21D e a todos os bônus inclusos. Caso não encontre o e-mail na caixa de entrada, verifique também as pastas de spam ou promoções. O envio é feito no mesmo dia, de forma automática."
+    },
+    {
       q: "Quanto tempo leva para ver resultados com o protocolo?",
       a: "Você começará a perceber melhorias na concentração e foco já nos primeiros dias, e resultados completos em até 21 dias."
     },
@@ -22,12 +26,12 @@ const FAQ = () => {
       a: "Não. Tudo o que você precisa é seguir nosso protocolo passo a passo, com materiais e dicas incluídos no manual digital."
     },
     {
-      q: "Posso fazer o protocolo se passo horas no celular?",
-      a: "Sim! Nosso protocolo foi desenvolvido justamente para funcionar mesmo se você usa o celular constantemente."
+      q: "E se eu não ficar satisfeito com minha compra?",
+      a: "Sem problemas! Você tem 7 dias de garantia para pedir reembolso total, sem perguntas."
     },
     {
-      q: "E se eu não ficar satisfeito?",
-      a: "Sem problemas! Você tem 7 dias de garantia para pedir reembolso total, sem perguntas."
+      q: "Posso fazer o protocolo se passo horas no celular?",
+      a: "Sim! Nosso protocolo foi desenvolvido justamente para funcionar mesmo se você usa o celular constantemente."
     },
     {
       q: "O protocolo é indicado para qualquer idade?",

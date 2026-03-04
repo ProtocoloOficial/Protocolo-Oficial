@@ -59,7 +59,7 @@ const Beneficios = () => {
         {/* Novo botão adicionado conforme solicitado */}
         <div className="beneficios-cta-container">
           <a href="#oferta" className="hero-cta">
-            Comece a recuperar seu foco
+            COMECE A RECUPERAR SEU FOCO
           </a>
         </div>
       </div>

@@ -6,17 +6,26 @@ import Livro3D from '../../assets/img/Livro3D.png';
 const Metodo = () => {
   const etapas = [
     {
-      titulo: "Diagnóstico do foco",
-      desc: "Entenda exatamente onde você perde mais tempo e as ferramentas para recuperar o controle imediato."
+      titulo: "Cérebro Superestimulado",
+      desc: "Entenda exatamente por que sua mente perdeu a capacidade de foco profundo e como os estímulos rápidos estão sabotando sua motivação sem que você perceba."
     },
     {
-      titulo: "Rotina diária de foco",
-      desc: "Técnicas práticas e validadas para manter sua atenção blindada e uma disciplina inabalável."
+      titulo: "Desintoxicação Neural",
+      desc: "Um protocolo estruturado para reduzir a sobrecarga mental e restaurar sua sensibilidade natural ao foco e à disciplina."
     },
     {
-      titulo: "Estratégias de produtividade",
-      desc: "Métodos rápidos e neurocientíficos para otimizar seus estudos e aniquilar tarefas complexas."
+      titulo: "Treinamento de Foco",
+      desc: "Técnicas práticas e progressivas para reconstruir sua capacidade de concentração e manter atenção profunda por longos períodos."
+    },
+    {
+      titulo: "Sistema Anti-Recaída",
+      desc: "Um mecanismo estratégico para impedir que você volte aos antigos padrões de distração e procrastinação."
+    },
+    {
+      titulo: "Consolidação de Hábito",
+      desc: "Transforme esforço em identidade e construa um padrão mental estável que mantém seu foco no longo prazo."
     }
+    
   ];
 
   return (
@@ -47,7 +56,7 @@ const Metodo = () => {
 
           <div className="metodo-cta-wrapper">
             <a href="#oferta" className="hero-cta">
-              Quero meu protocolo agora
+              ESTOU PRONTO PARA COMEÇAR
             </a>
           </div>
         </div>

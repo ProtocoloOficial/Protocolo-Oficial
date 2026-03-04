@@ -37,7 +37,7 @@ const Problema = () => {
 
             <div className="problema-cta-wrapper">
               <a href="#oferta" className="btn-discreto">
-                Quero meu protocolo
+                QUERO SAIR DESSE CICLO
               </a>
             </div>
           </div>

@@ -29,7 +29,7 @@ const Testemunhos = () => {
     <section className="testemunhos-section">
       <div className="container">
         <h2 className="testemunhos-title">
-          O que dizem quem já <span className="highlight-green">recuperou o foco</span>
+          Depoimentos reais de quem teve <span className="highlight-green"> seu foco restaurado</span>
         </h2>
         
         <div className="testemunhos-grid">
@@ -46,6 +46,14 @@ const Testemunhos = () => {
             </div>
           ))}
         </div>
+
+        {/* Adição do Botão Estratégico */}
+        <div className="testemunhos-cta">
+          <a href="#oferta" className="btn-discreto">
+            Também quero esse resultado
+          </a>
+        </div>
+
       </div>
     </section>
   );

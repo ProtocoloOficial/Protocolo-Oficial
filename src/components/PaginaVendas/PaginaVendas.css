@@ -472,8 +472,6 @@ html {
   }
 }
 
-/*==================================================================================================================================*/
-
 /* Seção Testemunhos */
 .testemunhos-section {
   padding: 80px 20px;
@@ -545,6 +543,133 @@ html {
   opacity: 0.9;
 }
 
+/* Estilo para o Botão dos Testemunhos */
+.testemunhos-cta {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsividade para o Grid no Desktop */
+@media (min-width: 992px) {
+  .testemunhos-grid {
+    flex-direction: row; /* Coloca os cards lado a lado no PC */
+    justify-content: center;
+  }
+  
+  .testemunho-card {
+    flex: 1; /* Faz todos os cards terem o mesmo tamanho */
+  }
+}
+
+/* ==========================================================================
+   NOVA SEÇÃO BÔNUS - ESTILO LISTA PREMIUM
+   ========================================================================== */
+
+.bonus-section-v2 {
+  background-color: #161616;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.bonus-header-v2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.bonus-tag {
+  background: rgba(199, 255, 0, 0.1);
+  color: #c7ff00;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.bonus-headline-v2 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1;
+  margin: 20px 0;
+}
+
+.text-neon-green {
+  color: #c7ff00;
+  text-shadow: 0 0 20px rgba(199, 255, 0, 0.4);
+}
+
+.bonus-sub {
+  color: #888;
+  font-size: 1.2rem;
+}
+
+/* Estrutura de Linhas (Rows) */
+.bonus-list-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bonus-row {
+  display: flex;
+  align-items: center; /* Alinhamento Ícone e Título garantido na mesma linha */
+  gap: 40px;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: 0.3s;
+}
+
+.bonus-row:hover {
+  background: rgba(255, 255, 255, 0.02);
+  padding-left: 20px;
+}
+
+.bonus-icon-side {
+  font-size: 3rem;
+  color: #c7ff00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bonus-text-side h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.bonus-text-side p {
+  color: #aaa;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.text-white { color: #fff; font-weight: 700; }
+.text-green { color: #c7ff00; }
+
+.bonus-footer-v2 {
+  text-align: center;
+  margin-top: 60px;
+  color: #555;
+  font-weight: 600;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+  .bonus-headline-v2 { font-size: 2.2rem; }
+  
+  .bonus-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .bonus-text-side p { margin: 0 auto; }
+}
+
+/*==================================================================================================================================*/
+
 /* Seção Oferta Definitiva */
 .oferta-section-final {
   position: relative;
@@ -594,7 +719,7 @@ html {
 /* Visual do Livro e Blush */
 .oferta-visual-box {
   position: relative;
-  width: 100%;
+  width: 50%;
   max-width: 350px;
   display: flex;
   justify-content: center;

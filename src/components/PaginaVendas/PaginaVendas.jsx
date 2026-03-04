@@ -7,6 +7,7 @@ import Problema from './Problema';
 import Beneficios from './Beneficios';
 import Metodo from './Metodo';
 import Testemunhos from './Testemunhos';
+import Bonus from './Bonus';
 import Oferta from './Oferta';
 import Garantia from './Garantia';
 import PerguntasFrequentes from './PerguntasFrequentes';
@@ -36,16 +37,19 @@ const PaginaVendas = () => {
       {/* 5. Prova Social */}
       <Testemunhos />
 
-      {/* 6. A Oferta Irresistível */}
+      {/* 6. A Bonus */}
+      <Bonus />
+
+      {/* 7. A Oferta Irresistível */}
       <Oferta />
 
-      {/* 7. Garantia de Risco Zero */}
+      {/* 8. Garantia de Risco Zero */}
       {<Garantia />}
 
-      {/* 8. FAQ */}
+      {/* 9. FAQ */}
       {<PerguntasFrequentes />}
 
-      {/* 9. Rodape */}
+      {/* 10. Rodape */}
       {<Rodape/>}
 
       {/* Footer Simples */}
