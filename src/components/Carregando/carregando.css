@@ -1,0 +1,78 @@
+.loading-screen {
+  height: 100vh;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.potion-container {
+  position: relative;
+  width: 100px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.potion-flask {
+  position: absolute;
+  width: 80px;
+  height: 100px;
+  border: 4px solid #c7ff00;
+  border-radius: 10px 10px 40px 40px;
+  left: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(199, 255, 0, 0.2);
+}
+
+.potion-liquid {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0%; /* Começa vazia */
+  background-color: #c7ff00;
+  animation: fillPotion 5s linear forwards;
+  box-shadow: inset 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+.loading-text {
+  color: white;
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 80%;
+  min-height: 1.5em;
+  animation: fadeInOut 2.5s infinite;
+}
+
+@keyframes fillPotion {
+  0% { height: 0%; }
+  100% { height: 100%; }
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+/* Bolhas saindo da poção */
+.potion-bubbles span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #c7ff00;
+  border-radius: 50%;
+  opacity: 0;
+  animation: bubbleUp 2s infinite;
+}
+
+.potion-bubbles span:nth-child(1) { left: 20px; animation-delay: 0.5s; }
+.potion-bubbles span:nth-child(2) { left: 50px; animation-delay: 1.2s; }
+.potion-bubbles span:nth-child(3) { left: 70px; animation-delay: 0.8s; }
+
+@keyframes bubbleUp {
+  0% { transform: translateY(100px); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(0px); opacity: 0; }
+}
