@@ -100,7 +100,7 @@ html {
 /* Seção Problema - Layout e Estilo */
 .problema-section {
   background-color: #161616;
-  padding: 80px 20px;
+  padding: 60px 20px; /* Reduzi um pouco o padding no mobile para ganhar espaço */
   overflow: hidden;
 }
 
@@ -108,7 +108,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 40px; /* Reduzi o gap para o mobile */
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -116,59 +116,65 @@ html {
 .problema-content {
   text-align: center;
   z-index: 2;
+  width: 100%; /* Garante que ocupe a largura total disponível */
 }
 
 .problema-headline {
-  font-size: 2.2rem;
+  font-size: 1.8rem; /* Tamanho menor para mobile */
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: #fff;
 }
 
 .problema-subheadline {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #ccc;
-  margin-bottom: 35px;
-  line-height: 1.6;
+  margin-bottom: 30px;
+  line-height: 1.5;
 }
 
 /* Lista de Problemas */
 .problema-list {
   list-style: none;
   padding: 0;
-  margin: 0 auto 40px;
-  display: inline-block;
+  margin: 0 auto 35px;
+  display: block; /* Mudado de inline-block para block no mobile */
+  max-width: 100%;
   text-align: left;
 }
 
 .problema-item {
   display: flex;
-  align-items: center;
-  gap: 15px;
-  font-size: 1.05rem;
-  margin-bottom: 18px;
+  align-items: flex-start; /* Alinha o ícone no topo se o texto quebrar linha */
+  gap: 12px;
+  font-size: 0.95rem; /* Ajuste leve para telas pequenas */
+  margin-bottom: 15px;
   color: #fff;
 }
 
 .problema-icon {
   color: #c7ff00;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  flex-shrink: 0; /* Impede que o ícone esmague se o texto for grande */
 }
 
-/* Botão Discreto (Estilo Outline) */
+/* Botão Discreto (Estilo Outline) - AJUSTADO PARA RESPONSIVIDADE */
 .btn-discreto {
+  display: inline-block; /* Garante que respeite o padding corretamente */
   text-decoration: none;
   border: 1.5px solid #c7ff00;
   color: #fff;
-  padding: 14px 30px;
+  padding: 14px 25px; /* Reduzi levemente o padding lateral */
   border-radius: 50px;
-  font-size: 0.95rem;
+  font-size: 0.85rem; /* Fonte levemente menor para caber em telas como iPhone SE */
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
   transition: 0.3s;
+  max-width: 100%; /* Não deixa o botão sair da tela */
+  box-sizing: border-box; /* Garante que o padding não aumente o tamanho final */
 }
 
 .btn-discreto:hover {
@@ -179,7 +185,7 @@ html {
 /* Visual do Looping Infinito */
 .problema-visual {
   width: 100%;
-  max-width: 400px;
+  max-width: 320px; /* Reduzi um pouco no mobile para não dominar a tela */
   display: flex;
   justify-content: center;
 }
@@ -197,18 +203,39 @@ html {
 
 .loop-label {
   color: #555;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 10px;
   font-weight: 600;
 }
 
-/* Responsividade Desktop */
+/* ==========================================================
+   MEDIA QUERIES - AJUSTES PARA TELAS MAIORES
+   ========================================================== */
+
+/* Tablet e Telas Médias */
+@media (min-width: 768px) {
+  .problema-headline {
+    font-size: 2.2rem;
+  }
+  
+  .btn-discreto {
+    font-size: 0.95rem;
+    padding: 14px 30px;
+  }
+}
+
+/* Desktop */
 @media (min-width: 992px) {
+  .problema-section {
+    padding: 100px 20px;
+  }
+
   .problema-grid {
     flex-direction: row;
     text-align: left;
+    gap: 80px;
   }
 
   .problema-content {
@@ -218,10 +245,15 @@ html {
 
   .problema-visual {
     flex: 0.8;
+    max-width: 400px;
   }
 
   .problema-headline {
     font-size: 3.2rem;
+  }
+
+  .problema-list {
+    margin: 0 0 40px 0; /* Alinha a lista à esquerda no desktop */
   }
 }
 
